@@ -1,0 +1,38 @@
+12.Diamond pattern:
+
+#include<stdio.h>
+int main(){
+    int n=4,l;
+    for(int i=-n;i<=n;i++){
+        if(i<0){
+            l=-i;
+        }
+        else{
+            l=i;
+        }
+        for(int s=0;s<l;s++){
+            printf("  ");
+        }
+        for(int j=0;j<2*(n-l)+1;j++){
+            printf("* ");
+        }
+        printf("\n");
+        }    
+}
+
+--------------------------->
+
+OUTPUT:
+
+        * 
+      * * * 
+    * * * * * 
+  * * * * * * * 
+* * * * * * * * * 
+  * * * * * * * 
+    * * * * * 
+      * * * 
+        * 
+
+
+=== Code Execution Successful ===

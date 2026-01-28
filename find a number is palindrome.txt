@@ -1,0 +1,32 @@
+find a number is palindrome:
+
+#include<stdio.h>
+int main(){
+    int n,temp,sum=0;
+    scanf("%d",&n);
+    temp=n;
+    while(n>0){
+        sum=sum*10+(n%10);
+        n=n/10;
+    }
+    if(temp==sum){
+        printf("It is palindrome");
+    }
+    else{
+        printf(" not a palindrome");
+    }
+}
+
+-------------------->
+OUTPUT:
+
+Sample Input
+121
+Your Output
+It is palindrome
+
+Sample Input
+988
+Your Output
+ not a palindrome
+

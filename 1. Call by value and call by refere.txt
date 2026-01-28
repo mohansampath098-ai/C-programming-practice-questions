@@ -1,0 +1,35 @@
+1. Call by value and call by reference
+
+a) CALL BY VALUE:
+
+
+#include<stdio.h>
+int incre(int a){
+    a++;
+}
+int main(){
+    int a=9;
+    incre(a);
+    printf("%d",a);
+    return 0;
+}
+
+THE OUTPUT IS : 9
+
+
+b) CALL BY REFERENCE:
+
+#include<stdio.h>
+void incre(int *p){
+    (*p)++;
+}
+int main(){
+    int a=9;
+    incre(&a);
+    printf("%d",a);
+    return 0;
+}
+
+
+THE OUTPUT IS: 10
+

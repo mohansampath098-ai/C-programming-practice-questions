@@ -1,0 +1,172 @@
+CHATBOT:
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char input[100];
+
+    printf("Simple Chatbot\n");
+    printf("Type something and press Enter\n");
+    printf("Type 'bye' to exit\n\n");
+
+    while (1)
+    {
+        printf("You: ");
+        fgets(input, sizeof(input), stdin);
+
+        // remove newline
+        input[strcspn(input, "\n")] = 0;
+
+        if (strcmp(input, "hi") == 0)
+        {
+            printf("Bot: Hello\n");
+        }
+        else if (strcmp(input, "hello") == 0)
+        {
+            printf("Bot: Hi there\n");
+        }
+        else if (strcmp(input, "how are you") == 0)
+        {
+            printf("Bot: I am fine\n");
+        }
+        else if (strcmp(input, "what is your name") == 0)
+        {
+            printf("Bot: I am a simple chatbot\n");
+        }
+        else if (strcmp(input, "who created you") == 0)
+        {
+            printf("Bot: I was created using C language\n");
+        }
+        else if (strcmp(input, "what is c") == 0)
+        {
+            printf("Bot: C is a programming language\n");
+        }
+        else if (strcmp(input, "what is programming") == 0)
+        {
+            printf("Bot: Programming is giving instructions to computer\n");
+        }
+        else if (strcmp(input, "what is computer") == 0)
+        {
+            printf("Bot: Computer is an electronic machine\n");
+        }
+        else if (strcmp(input, "good morning") == 0)
+        {
+            printf("Bot: Good morning\n");
+        }
+        else if (strcmp(input, "good afternoon") == 0)
+        {
+            printf("Bot: Good afternoon\n");
+        }
+        else if (strcmp(input, "good evening") == 0)
+        {
+            printf("Bot: Good evening\n");
+        }
+        else if (strcmp(input, "good night") == 0)
+        {
+            printf("Bot: Good night\n");
+        }
+        else if (strcmp(input, "what can you do") == 0)
+        {
+            printf("Bot: I can chat with you\n");
+        }
+        else if (strcmp(input, "are you human") == 0)
+        {
+            printf("Bot: No I am a program\n");
+        }
+        else if (strcmp(input, "do you sleep") == 0)
+        {
+            printf("Bot: No I do not sleep\n");
+        }
+        else if (strcmp(input, "do you eat") == 0)
+        {
+            printf("Bot: No I do not eat\n");
+        }
+        else if (strcmp(input, "tell me a joke") == 0)
+        {
+            printf("Bot: Why C programmers love coffee\n");
+        }
+        else if (strcmp(input, "haha") == 0)
+        {
+            printf("Bot: I am glad you are happy\n");
+        }
+        else if (strcmp(input, "thank you") == 0)
+        {
+            printf("Bot: You are welcome\n");
+        }
+        else if (strcmp(input, "thanks") == 0)
+        {
+            printf("Bot: Welcome\n");
+        }
+        else if (strcmp(input, "sorry") == 0)
+        {
+            printf("Bot: No problem\n");
+        }
+        else if (strcmp(input, "help") == 0)
+        {
+            printf("Bot: Just type simple sentences\n");
+        }
+        else if (strcmp(input, "what is your age") == 0)
+        {
+            printf("Bot: I do not have age\n");
+        }
+        else if (strcmp(input, "where do you live") == 0)
+        {
+            printf("Bot: I live inside this program\n");
+        }
+        else if (strcmp(input, "are you real") == 0)
+        {
+            printf("Bot: I am virtual\n");
+        }
+        else if (strcmp(input, "do you like me") == 0)
+        {
+            printf("Bot: Yes I like chatting\n");
+        }
+        else if (strcmp(input, "what is 1+1") == 0)
+        {
+            printf("Bot: 2\n");
+        }
+        else if (strcmp(input, "what is 2+2") == 0)
+        {
+            printf("Bot: 4\n");
+        }
+        else if (strcmp(input, "what is india") == 0)
+        {
+            printf("Bot: India is a country\n");
+        }
+        else if (strcmp(input, "what is college") == 0)
+        {
+            printf("Bot: College is a place to study\n");
+        }
+        else if (strcmp(input, "what is student") == 0)
+        {
+            printf("Bot: Student is a learner\n");
+        }
+        else if (strcmp(input, "what is teacher") == 0)
+        {
+            printf("Bot: Teacher teaches students\n");
+        }
+        else if (strcmp(input, "do you know me") == 0)
+        {
+            printf("Bot: I know what you type\n");
+        }
+        else if (strcmp(input, "can you learn") == 0)
+        {
+            printf("Bot: No I am very simple\n");
+        }
+        else if (strcmp(input, "bye") == 0)
+        {
+            printf("Bot: Goodbye\n");
+            break;
+        }
+        else
+        {
+            printf("Bot: I do not understand\n");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}

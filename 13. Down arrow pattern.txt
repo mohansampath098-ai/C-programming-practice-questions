@@ -1,0 +1,31 @@
+13. Down arrow pattern:
+
+#include<stdio.h>
+int main(){
+    int n=5,l;
+    for(int i=0;i<=n;i++){
+        for(int j=-n;j<=n;j++){
+            if(-(n-i)<j && (n-i)>j){
+                printf("  ");
+            }
+            else{
+                printf("* ");
+            }
+        }
+        printf("\n");
+    }
+        
+    }        
+
+--------------------->
+OUTPUT:
+
+*                   * 
+* *               * * 
+* * *           * * * 
+* * * *       * * * * 
+* * * * *   * * * * * 
+* * * * * * * * * * * 
+
+
+=== Code Execution Successful ===

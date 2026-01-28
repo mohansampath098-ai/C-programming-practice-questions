@@ -1,0 +1,27 @@
+Find a year is leapyear:
+
+#include<stdio.h>
+int main(){
+    int year;
+    printf("year: ");
+    scanf("%d",&year);
+    if(year%400==0||year%4==0&&year%100!=0){
+        printf("leap year");
+    }
+    else{
+        printf("not leap year");
+    }
+}
+
+---------------->
+OUTPUT:
+
+Sample Input
+1928
+Your Output
+year: leap year
+
+Sample Input
+1929
+Your Output
+year: not leap year

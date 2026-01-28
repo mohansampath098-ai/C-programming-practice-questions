@@ -1,0 +1,39 @@
+9.Hour-glass pattern:
+
+#include<stdio.h>
+int main(){
+    int n=4,l;
+    for(int i=-n;i<n;i++){
+        if(i<0){
+            l=-i;
+        }
+        else{                                                            HINT: SINGLE SPACE IN PRINTF
+
+            l=i;
+        }
+        for(int s=0;s<n-l;s++){
+            printf(" ");
+        }
+        for(int j=0;j<l+1;j++){
+            printf("* ");
+        }
+        printf("\n");
+        }    
+}
+
+--------------------->
+
+OUTPUT:
+
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+   * * 
+  * * * 
+ * * * * 
+
+
+=== Code Execution Successful ===
+
