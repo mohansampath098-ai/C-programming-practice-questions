@@ -1,0 +1,33 @@
+Insertirng an elememnt:
+
+
+#include<stdio.h>
+int main(){
+    int n,a[20],pos,ele;
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    scanf("%d",&pos);
+    scanf("%d",&ele);
+    pos--;
+    for(int i=n-1;i>=pos;i--){
+        a[i+1]=a[i];
+    }
+     a[pos]=ele;
+    for(int i=0;i<=n;i++){
+        printf("%d ",a[i]);
+    }
+}
+
+------------------>
+
+OUTPUT:
+
+Sample Input
+5
+1 2 3 4 5
+4
+9
+Your Output
+1 2 3 9 4 5 
