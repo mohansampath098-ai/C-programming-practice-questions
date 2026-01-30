@@ -1,0 +1,26 @@
+minimam in an array:
+
+#include<stdio.h>
+int main(){
+    int n,mini,a[10];
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    mini=a[0];
+    for(int i=1;i<n;i++){
+        if(a[i]<mini){
+            mini=a[i];
+        }
+       
+    }
+     printf("%d",mini);
+}
+
+------------------>
+OUTPUT:
+Sample Input
+5 
+1 2 3 4 5
+Your Output
+1
