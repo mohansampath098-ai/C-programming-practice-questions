@@ -1,0 +1,29 @@
+count number of zero in binary number:
+
+#include<stdio.h>
+int main(){
+    int dec,rem,count=0,i=0;
+    char bin[10];
+    scanf("%d",&dec);
+    while(dec>0){
+        rem=dec%2;
+        bin[i]=rem;
+        dec=dec/2;
+        i++;
+    }
+    for(int j=i-1;j>=0;j--){
+    if(bin[j]==0){
+        count++;
+    }
+    }
+    printf("%d",count);
+}
+
+--------------------------->
+
+OUTPUT:
+
+Sample Input
+4
+Your Output
+2
