@@ -1,0 +1,23 @@
+Automorpic number:
+
+#include<stdio.h>
+int main(){
+    int n,c,rem;
+    scanf("%d",&n);
+    c=n*n;
+    rem=c%10;
+    if(rem==n){
+        printf("TRUE");
+    }
+    else{
+        printf("FLASE");
+    }
+}
+
+----------------------------->
+OUTPUT:
+
+Sample Input
+6
+Your Output
+TRUE
