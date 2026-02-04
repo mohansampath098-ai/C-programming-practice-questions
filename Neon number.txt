@@ -1,0 +1,30 @@
+Neon number:
+
+#include<stdio.h>
+int main(){
+    int n,m,sum=0;
+    scanf("%d",&n);
+     m=n*n;
+    while(m>0){
+        sum=sum+(m%10);
+        m=m/10;
+    }
+    printf("%d\n",sum);
+    if(sum==n){
+        printf("it is a neon number");
+    }
+    else{
+        printf("not a neon number");
+    }
+    return 0;
+    }
+
+---------------------------->
+
+Output:
+
+Sample Input
+9
+Your Output
+9
+it is a neon number
