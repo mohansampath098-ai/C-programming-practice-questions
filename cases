@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int number;
+    char uppercase_letter, lowercase_letter;
+
+    // Get a number from the user (0-25)
+    printf("Enter a small number (0-25): ");
+    if (scanf("%d", &number) != 1 || number < 0 || number > 25) {
+        printf("Invalid input. Please enter a number between 0 and 25.\n");
+        return 1;
+    }
+
+    // Convert to uppercase letter
+    // ASCII value of 'A' is 65, so adding 0 gives 'A', 1 gives 'B', etc.
+    uppercase_letter = (char)('A' + number);
+
+    // Convert to lowercase letter
+    // ASCII value of 'a' is 97
+    lowercase_letter = (char)('a' + number);
+
+    // Print the results
+    printf("Uppercase letter: %c\n", uppercase_letter);
+    printf("Lowercase letter: %c\n", lowercase_letter);
+
+    return 0;
+}
