@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, j, limit;
+
+    for(i = 1; i <= 5; i++)
+    {
+        if(i % 2 == 0)
+        {
+            limit = 2;   // even number → print 2 times
+        }
+        else
+        {
+            limit = i;   // odd number → print i times
+        }
+
+        for(j = 1; j <= limit; j++)
+        {
+            printf("%d ", i);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
